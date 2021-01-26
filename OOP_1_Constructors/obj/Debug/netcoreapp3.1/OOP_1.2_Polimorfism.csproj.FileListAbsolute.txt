@@ -1,0 +1,13 @@
+F:\KPI FIOT 4 course\C# обучение\OOP_1.2_Polimorfism\OOP_1_Constructors\bin\Debug\netcoreapp3.1\OOP_1.2_Polimorfism.exe
+F:\KPI FIOT 4 course\C# обучение\OOP_1.2_Polimorfism\OOP_1_Constructors\bin\Debug\netcoreapp3.1\OOP_1.2_Polimorfism.deps.json
+F:\KPI FIOT 4 course\C# обучение\OOP_1.2_Polimorfism\OOP_1_Constructors\bin\Debug\netcoreapp3.1\OOP_1.2_Polimorfism.runtimeconfig.json
+F:\KPI FIOT 4 course\C# обучение\OOP_1.2_Polimorfism\OOP_1_Constructors\bin\Debug\netcoreapp3.1\OOP_1.2_Polimorfism.runtimeconfig.dev.json
+F:\KPI FIOT 4 course\C# обучение\OOP_1.2_Polimorfism\OOP_1_Constructors\bin\Debug\netcoreapp3.1\OOP_1.2_Polimorfism.dll
+F:\KPI FIOT 4 course\C# обучение\OOP_1.2_Polimorfism\OOP_1_Constructors\bin\Debug\netcoreapp3.1\OOP_1.2_Polimorfism.pdb
+F:\KPI FIOT 4 course\C# обучение\OOP_1.2_Polimorfism\OOP_1_Constructors\obj\Debug\netcoreapp3.1\OOP_1.2_Polimorfism.csprojAssemblyReference.cache
+F:\KPI FIOT 4 course\C# обучение\OOP_1.2_Polimorfism\OOP_1_Constructors\obj\Debug\netcoreapp3.1\OOP_1.2_Polimorfism.csproj.CoreCompileInputs.cache
+F:\KPI FIOT 4 course\C# обучение\OOP_1.2_Polimorfism\OOP_1_Constructors\obj\Debug\netcoreapp3.1\OOP_1.2_Polimorfism.AssemblyInfoInputs.cache
+F:\KPI FIOT 4 course\C# обучение\OOP_1.2_Polimorfism\OOP_1_Constructors\obj\Debug\netcoreapp3.1\OOP_1.2_Polimorfism.AssemblyInfo.cs
+F:\KPI FIOT 4 course\C# обучение\OOP_1.2_Polimorfism\OOP_1_Constructors\obj\Debug\netcoreapp3.1\OOP_1.2_Polimorfism.dll
+F:\KPI FIOT 4 course\C# обучение\OOP_1.2_Polimorfism\OOP_1_Constructors\obj\Debug\netcoreapp3.1\OOP_1.2_Polimorfism.pdb
+F:\KPI FIOT 4 course\C# обучение\OOP_1.2_Polimorfism\OOP_1_Constructors\obj\Debug\netcoreapp3.1\OOP_1.2_Polimorfism.genruntimeconfig.cache
