@@ -6,7 +6,7 @@ namespace OOP_1_2_Polimorfism
     {
         static void Main(string[] args)
         {
-            Animal cat_first = new Cat(3);
+            Animal cat_first = new Cat(-3);
             Animal cat_second = new Cat("Васька");
             Animal cat_third = new Cat();
 

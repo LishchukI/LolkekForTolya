@@ -17,11 +17,24 @@ namespace OOP_1_2_Polimorfism
             get => age;
             set
             {
-                if (value < 0)
-                    Console.WriteLine("Error! (Возраст < 0)");
-                else
-                    age = value;
-            }
+                AgeOfAnimalException ex = new AgeOfAnimalException("Age error! Age has been changed to standard '0'.", "Age must be greater than 0!", DateTime.Now);
+                try
+                {
+                    if (value < 0)
+                    {
+                        throw ex;
+                    }
+                    else
+                        age = value;
+                }
+                catch (AgeOfAnimalException e)
+                {
+                    Console.WriteLine("Member name: " + e.TargetSite);
+                    Console.WriteLine("Message: " + e.Message);
+                    Console.WriteLine("Time of error: " + e.ErrorTime);
+                    Console.WriteLine("Cause: " + e.CauseOfError);
+                }
+             }
         }
         public int LengthOfClaws
         {
@@ -47,10 +60,8 @@ namespace OOP_1_2_Polimorfism
 
         public override string ToString() =>
             $"\nID - {id}, возраст - {age} лет, имя - {Name}, голос - {Voice}, длина коготков - {claws.LengthOfClaws}, а коготки спрятаны?)0 - {claws.GetInformationAboutClaws()}.\n";
-
         public override bool Equals(object obj) =>
             obj?.ToString() == ToString();
-
         public override int GetHashCode() => 
             id.GetHashCode();
     }

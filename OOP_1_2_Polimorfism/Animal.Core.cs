@@ -10,7 +10,7 @@ namespace OOP_1_2_Polimorfism
         public Animal(int age = 0, string name = "unnamed", string voice = "...", int lenghtOfClaws = 0)
         {
             ID = id;
-            this.age = age;
+            Age = age;
             Name = name;
             Voice = voice;
             claws.LengthOfClaws = lenghtOfClaws;

@@ -5,9 +5,10 @@ using System.Text;
 namespace OOP_1_2_Polimorfism
 {
     partial class Cat
-    {        
+    {
         //Constructors
-        public Cat() { }
+        public Cat()
+            : base() { }
         public Cat(int age)
             : base(age, "unnamed", "maaaaaomav") { }
         public Cat(string name)
