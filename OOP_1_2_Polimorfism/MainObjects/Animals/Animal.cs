@@ -2,8 +2,30 @@
 
 namespace OOP_1_2_Polimorfism
 {
-    abstract partial class Animal
+    abstract class Animal
     {
+        //Constructors
+        public Animal(string name)
+            : this(0, name) { }
+        public Animal(int age = 0, string name = "unnamed", string voice = "...", int lenghtOfClaws = 0)
+        {
+            ID = id;
+            Age = age;
+            Name = name;
+            Voice = voice;
+            claws.LengthOfClaws = lenghtOfClaws;
+        }
+
+        //Fields
+        //Static
+        public static int Paws { get; } = 4;
+
+        //Non-static
+        protected int age;
+        static protected int staticId = 1;
+        protected int id;
+        protected Claws claws = new Claws();
+
         //Properties
         public int ID
         {
@@ -45,8 +67,7 @@ namespace OOP_1_2_Polimorfism
         //Mehods
         public virtual void GetFullInformation()
         {
-            Console.Write("\nID - " + id + ", ");
-            Console.Write("возраст - " + age + " лет, ");
+            Console.Write("Возраст - " + age + " лет, ");
             Console.Write("имя - " + Name + ", ");
             Console.Write("голос - " + Voice + ", ");
             Console.Write("длина коготков - " + claws.LengthOfClaws + ", ");
@@ -59,7 +80,7 @@ namespace OOP_1_2_Polimorfism
         }
 
         public override string ToString() =>
-            $"\nID - {id}, возраст - {age} лет, имя - {Name}, голос - {Voice}, длина коготков - {claws.LengthOfClaws}, а коготки спрятаны?)0 - {claws.GetInformationAboutClaws()}.\n";
+            $"\nВозраст - {age} лет, имя - {Name}, голос - {Voice}, длина коготков - {claws.LengthOfClaws}, а коготки спрятаны?)0 - {claws.GetInformationAboutClaws()}.\n";
         public override bool Equals(object obj) =>
             obj?.ToString() == ToString();
         public override int GetHashCode() => 

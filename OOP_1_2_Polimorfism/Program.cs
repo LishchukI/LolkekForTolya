@@ -2,7 +2,7 @@
 
 namespace OOP_1_2_Polimorfism
 {
-    class Main_class
+    class Program
     {
         static void Main(string[] args)
         {

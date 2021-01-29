@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OOP_1_2_Polimorfism
+﻿namespace OOP_1_2_Polimorfism
 {
-    partial class Cat
+    class Cat : Animal
     {
         //Constructors
         public Cat()

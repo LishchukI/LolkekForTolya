@@ -1,10 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace OOP_1_2_Polimorfism
 {
     //Приют для животных
-    partial class AnimalShelter
+     class AnimalShelter
     {
+        //Constructors
+        public AnimalShelter() { }
+        public AnimalShelter(Animal animal)
+        {
+            AddAnimal(animal);
+        }
+
+        //Fields
+        private List<Animal> _listOfAnimals = new List<Animal>();
+
         //Properties
         public int NumberOfAnimals { get; private set; } = 0;
 
@@ -23,14 +35,8 @@ namespace OOP_1_2_Polimorfism
 
         public void GetAnimal(Animal animal)
         {
-            foreach (Animal animals in _listOfAnimals)
-            {
-                if (animals == animal)
-                {
-                    animals.GetFullInformation();
-                    break;
-                }
-            }
+            _listOfAnimals.Find(animals => animals == animal).GetFullInformation();
+            Console.WriteLine(nameof(animal));
         }
         public void AllAnimals()
         {
@@ -44,27 +50,22 @@ namespace OOP_1_2_Polimorfism
 
         public void GetAllNameGottenAnimal<T> ()
         {
+            var types = new Dictionary<Type, string>
+            {
+                { typeof(Kitty), "Котенок" },
+                { typeof(Cat), "Кот" },
+                { typeof(Dog), "Собака" },
+            };
+
             Console.WriteLine();
             foreach (Animal animals in _listOfAnimals)
             {
                 if (animals is T)
                 {
-                    if (animals.Name == "unnamed")
-                    {
-                        switch (animals)
-                        {
-                            case Kitty _:
-                                Console.Write("ВНИМАНИЕ!!! Котенок без имени! - ");
-                                break;
-                            case Cat _:
-                                Console.Write("ВНИМАНИЕ!!! Кот без имени! - ");
-                                break;
-                            case Dog _:
-                                Console.Write("ВНИМАНИЕ!!! Собака без имени! - ");
-                                break;
-                        }
-                    }
-                    Console.WriteLine(animals.Name);
+                    if(animals.Name == "unnamed")
+                        Console.Write($"ВНИМАНИЕ!!! {types[typeof(T)]} без имени!");
+                    else
+                        Console.WriteLine(animals.Name);
                 }
             }
             Console.WriteLine();

@@ -1,8 +1,11 @@
 ﻿namespace OOP_1_2_Polimorfism
 {
     //Коготки
-    partial class Claws
+    class Claws
     {
+        //Fields
+        private bool _statusOfClaws = false;
+
         //Properties
         public int LengthOfClaws { get; set; }
 
@@ -17,10 +20,7 @@
 
         public void ActivationOfClaws()
         {
-            if (_statusOfClaws)
-                _statusOfClaws = false;
-            else
-                _statusOfClaws = true;
+            _statusOfClaws = !_statusOfClaws;
         }
     }
 }
